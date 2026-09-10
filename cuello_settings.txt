@@ -1,0 +1,93 @@
+<!--Pololu Maestro servo controller settings file, http://www.pololu.com/catalog/product/1350-->
+<UscSettings version="1">
+  <NeverSuspend>false</NeverSuspend>
+  <SerialMode>UART_FIXED_BAUD_RATE</SerialMode>
+  <FixedBaudRate>9600</FixedBaudRate>
+  <SerialTimeout>0</SerialTimeout>
+  <EnableCrc>false</EnableCrc>
+  <SerialDeviceNumber>12</SerialDeviceNumber>
+  <SerialMiniSscOffset>0</SerialMiniSscOffset>
+  <Channels ServosAvailable="6" ServoPeriod="156">
+    <!--Period = 19,968 ms-->
+    <!--Channel 0-->
+    <Channel name="Inferior" mode="Servo" min="1792" max="8832" homemode="Off" home="1792" speed="15" acceleration="50" neutral="6000" range="1905" />
+    <!--Channel 1-->
+    <Channel name="Medio" mode="Servo" min="1792" max="8832" homemode="Off" home="1792" speed="15" acceleration="50" neutral="6000" range="1905" />
+    <!--Channel 2-->
+    <Channel name="Superior" mode="Servo" min="1792" max="8832" homemode="Off" home="1792" speed="15" acceleration="50" neutral="6000" range="1905" />
+    <!--Channel 3-->
+    <Channel name="" mode="Servo" min="2240" max="8000" homemode="Off" home="2240" speed="0" acceleration="0" neutral="6000" range="1905" />
+    <!--Channel 4-->
+    <Channel name="" mode="Servo" min="2240" max="8000" homemode="Off" home="2240" speed="0" acceleration="0" neutral="6000" range="1905" />
+    <!--Channel 5-->
+    <Channel name="" mode="Servo" min="2240" max="8000" homemode="Off" home="2240" speed="0" acceleration="0" neutral="6000" range="1905" />
+  </Channels>
+  <Sequences>
+    <Sequence name="Mov_Pitch" useSpeedAndAcceleration="false">
+      <Frame name="Neutro" duration="2500">4936 4970 5243 0 0 0 s 15 15 15 0 0 0 a 50 50 50 0 0 0</Frame>
+      <Frame name="Pitch atrás" duration="2500">4628 5961 6303 0 0 0 s 15 15 15 0 0 0 a 50 50 50 0 0 0</Frame>
+      <Frame name="Neutro" duration="2500">4936 4970 5243 0 0 0 s 15 15 15 0 0 0 a 50 50 50 0 0 0</Frame>
+      <Frame name="Pitch adelante" duration="2500">6884 4628 5346 0 0 0 s 15 15 15 0 0 0 a 50 50 50 0 0 0</Frame>
+      <Frame name="Neutro" duration="2500">4936 4970 5243 0 0 0 s 15 15 15 0 0 0 a 50 50 50 0 0 0</Frame>
+    </Sequence>
+    <Sequence name="Mov_Roll" useSpeedAndAcceleration="false">
+      <Frame name="neutro" duration="2500">4936 4970 5243 0 0 0 s 15 15 15 0 0 0 a 50 50 50 0 0 0</Frame>
+      <Frame name="roll derecha" duration="2500">6576 6781 4355 0 0 0 s 15 15 15 0 0 0 a 50 50 50 0 0 0</Frame>
+      <Frame name="neutro" duration="2500">4936 4970 5243 0 0 0 s 15 15 15 0 0 0 a 50 50 50 0 0 0</Frame>
+      <Frame name="roll izquierda" duration="2500">5312 4320 6713 0 0 0 s 15 15 15 0 0 0 a 50 50 50 0 0 0</Frame>
+      <Frame name="neutro" duration="2500">4936 4970 5243 0 0 0 s 15 15 15 0 0 0 a 50 50 50 0 0 0</Frame>
+    </Sequence>
+    <Sequence name="Mov_Yaw" useSpeedAndAcceleration="false">
+      <Frame name="Neutro" duration="2500">4936 4970 5243 0 0 0 s 15 15 15 0 0 0 a 50 50 50 0 0 0</Frame>
+      <Frame name="Yaw izquierda" duration="2500">2578 2475 2475 0 0 0 s 15 15 15 0 0 0 a 50 50 50 0 0 0</Frame>
+      <Frame name="Neutro" duration="2500">4936 4970 5243 0 0 0 s 15 15 15 0 0 0 a 50 50 50 0 0 0</Frame>
+      <Frame name="Yaw derecha" duration="2500">8148 8045 8045 0 0 0 s 15 15 15 0 0 0 a 50 50 50 0 0 0</Frame>
+      <Frame name="Neutro" duration="2500">4936 4970 5243 0 0 0 s 15 15 15 0 0 0 a 50 50 50 0 0 0</Frame>
+    </Sequence>
+  </Sequences>
+  <Script ScriptDone="true">
+### Sequence subroutines: ###
+
+# Mov_Pitch
+sub Mov_Pitch
+  2500 4936 4970 5243 0 0 0 frame_0..5 # Neutro
+  2500 4628 5961 6303 frame_0..2 # Pitch atrás
+  2500 4936 4970 5243 frame_0..2 # Neutro
+  2500 6884 4628 5346 frame_0..2 # Pitch adelante
+  2500 4936 4970 5243 frame_0..2 # Neutro
+  return
+# Mov_Roll
+sub Mov_Roll
+  2500 4936 4970 5243 0 0 0 frame_0..5 # neutro
+  2500 6576 6781 4355 frame_0..2 # roll derecha
+  2500 4936 4970 5243 frame_0..2 # neutro
+  2500 5312 4320 6713 frame_0..2 # roll izquierda
+  2500 4936 4970 5243 frame_0..2 # neutro
+  return
+# Mov_Yaw
+sub Mov_Yaw
+  2500 4936 4970 5243 0 0 0 frame_0..5 # Neutro
+  2500 2578 2475 2475 frame_0..2 # Yaw izquierda
+  2500 4936 4970 5243 frame_0..2 # Neutro
+  2500 8148 8045 8045 frame_0..2 # Yaw derecha
+  2500 4936 4970 5243 frame_0..2 # Neutro
+  return
+
+sub frame_0..5
+  5 servo
+  4 servo
+  3 servo
+  2 servo
+  1 servo
+  0 servo
+  delay
+  return
+
+sub frame_0..2
+  2 servo
+  1 servo
+  0 servo
+  delay
+  return
+</Script>
+</UscSettings>

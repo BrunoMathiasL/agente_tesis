@@ -1,0 +1,315 @@
+<!--Pololu Maestro servo controller settings file, http://www.pololu.com/catalog/product/1350-->
+<UscSettings version="1">
+  <NeverSuspend>true</NeverSuspend>
+  <SerialMode>USB_DUAL_PORT</SerialMode>
+  <FixedBaudRate>9600</FixedBaudRate>
+  <SerialTimeout>0</SerialTimeout>
+  <EnableCrc>false</EnableCrc>
+  <SerialDeviceNumber>12</SerialDeviceNumber>
+  <SerialMiniSscOffset>0</SerialMiniSscOffset>
+  <EnablePullups>true</EnablePullups>
+  <Channels MiniMaestroServoPeriod="80000" ServoMultiplier="1">
+    <!--Period = 20 ms-->
+    <!--Channel 0-->
+    <Channel name="Parp Izq Bot" mode="Servo" min="3968" max="8000" homemode="Off" home="3968" speed="20" acceleration="0" neutral="6000" range="1905" />
+    <!--Channel 1-->
+    <Channel name="Parp Izq Up" mode="Servo" min="3968" max="8000" homemode="Off" home="3968" speed="20" acceleration="0" neutral="6000" range="1905" />
+    <!--Channel 2-->
+    <Channel name="Ojos Up" mode="Servo" min="3968" max="8000" homemode="Off" home="3968" speed="30" acceleration="0" neutral="6000" range="1905" />
+    <!--Channel 3-->
+    <Channel name="Parp Der Bot" mode="Servo" min="3968" max="8000" homemode="Off" home="3968" speed="20" acceleration="0" neutral="6000" range="1905" />
+    <!--Channel 4-->
+    <Channel name="Parp Der Up" mode="Servo" min="3968" max="8000" homemode="Off" home="3968" speed="20" acceleration="0" neutral="6000" range="1905" />
+    <!--Channel 5-->
+    <Channel name="Ojos Lado" mode="Servo" min="3968" max="8000" homemode="Off" home="3968" speed="30" acceleration="0" neutral="6000" range="1905" />
+    <!--Channel 6-->
+    <Channel name="Ceja Izq Roll" mode="Servo" min="3968" max="8832" homemode="Off" home="3968" speed="30" acceleration="0" neutral="6000" range="1905" />
+    <!--Channel 7-->
+    <Channel name="Ceja Der Roll" mode="Servo" min="3968" max="8000" homemode="Off" home="3968" speed="30" acceleration="0" neutral="6000" range="1905" />
+    <!--Channel 8-->
+    <Channel name="Ceja Izq Up" mode="Servo" min="3968" max="8000" homemode="Off" home="3968" speed="50" acceleration="0" neutral="6000" range="1905" />
+    <!--Channel 9-->
+    <Channel name="Ceja Der Up" mode="Servo" min="3968" max="8000" homemode="Off" home="3968" speed="50" acceleration="0" neutral="6000" range="1905" />
+    <!--Channel 10-->
+    <Channel name="Sonrisa Izq" mode="Servo" min="3968" max="8000" homemode="Off" home="3968" speed="25" acceleration="0" neutral="6000" range="1905" />
+    <!--Channel 11-->
+    <Channel name="Sonrisa Der" mode="Servo" min="3968" max="8000" homemode="Off" home="3968" speed="25" acceleration="0" neutral="6000" range="1905" />
+    <!--Channel 12-->
+    <Channel name="Boca" mode="Servo" min="3968" max="8000" homemode="Off" home="3968" speed="100" acceleration="70" neutral="6000" range="1905" />
+    <!--Channel 13-->
+    <Channel name="" mode="Servo" min="3968" max="8000" homemode="Off" home="3968" speed="0" acceleration="0" neutral="6000" range="1905" />
+    <!--Channel 14-->
+    <Channel name="" mode="Servo" min="3968" max="8000" homemode="Off" home="3968" speed="0" acceleration="0" neutral="6000" range="1905" />
+    <!--Channel 15-->
+    <Channel name="" mode="Servo" min="3968" max="8000" homemode="Off" home="3968" speed="0" acceleration="0" neutral="6000" range="1905" />
+    <!--Channel 16-->
+    <Channel name="" mode="Servo" min="3968" max="8000" homemode="Off" home="3968" speed="0" acceleration="0" neutral="6000" range="1905" />
+    <!--Channel 17-->
+    <Channel name="" mode="Servo" min="3968" max="8000" homemode="Off" home="3968" speed="0" acceleration="0" neutral="6000" range="1905" />
+    <!--Channel 18-->
+    <Channel name="" mode="Input" min="0" max="1024" homemode="Ignore" home="0" speed="0" acceleration="0" neutral="1024" range="1905" />
+    <!--Channel 19-->
+    <Channel name="" mode="Servo" min="3968" max="8000" homemode="Off" home="3968" speed="0" acceleration="0" neutral="6000" range="1905" />
+    <!--Channel 20-->
+    <Channel name="" mode="Servo" min="3968" max="8000" homemode="Off" home="3968" speed="0" acceleration="0" neutral="6000" range="1905" />
+    <!--Channel 21-->
+    <Channel name="" mode="Servo" min="3968" max="8000" homemode="Off" home="3968" speed="0" acceleration="0" neutral="6000" range="1905" />
+    <!--Channel 22-->
+    <Channel name="" mode="Servo" min="3968" max="8000" homemode="Off" home="3968" speed="0" acceleration="0" neutral="6000" range="1905" />
+    <!--Channel 23-->
+    <Channel name="" mode="Servo" min="3968" max="8000" homemode="Off" home="3968" speed="0" acceleration="0" neutral="6000" range="1905" />
+  </Channels>
+  <Sequences>
+    <Sequence name="Enojo" useSpeedAndAcceleration="false">
+      <Frame name="Neutra abierta" duration="500">7941 6121 5670 4731 6571 5572 6234 5651 7021 5475 5690 6277 8000 0 0 0 0 0 1023 0 0 0 0 0 s 20 20 30 20 20 30 30 30 20 20 25 25 100 0 0 0 0 0 0 0 0 0 0 0 a 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</Frame>
+      <Frame name="Neutra cerrada" duration="500">6727 7314 5670 5827 5298 5572 6234 5651 7021 5475 5690 6277 8000 0 0 0 0 0 1023 0 0 0 0 0 s 20 20 30 20 20 30 30 30 20 20 25 25 100 0 0 0 0 0 0 0 0 0 0 0 a 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</Frame>
+      <Frame name="Neutra abierta" duration="500">7941 6121 5670 4731 6571 5572 6234 5651 7021 5475 5690 6277 8000 0 0 0 0 0 1023 0 0 0 0 0 s 20 20 30 20 20 30 30 30 20 20 25 25 100 0 0 0 0 0 0 0 0 0 0 0 a 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</Frame>
+      <Frame name="Enojo" duration="1500">7393 6669 5670 5181 6023 5572 7037 4985 5416 7040 4985 7001 8000 0 0 0 0 0 1023 0 0 0 0 0 s 20 20 30 20 20 30 30 30 20 20 25 25 100 0 0 0 0 0 0 0 0 0 0 0 a 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</Frame>
+      <Frame name="Neutra abierta" duration="500">7941 6121 5670 4731 6571 5572 6234 5651 7021 5475 5690 6277 8000 0 0 0 0 0 1023 0 0 0 0 0 s 20 20 30 20 20 30 30 30 20 20 25 25 100 0 0 0 0 0 0 0 0 0 0 0 a 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</Frame>
+      <Frame name="Neutra cerrada" duration="500">6727 7314 5670 5827 5298 5572 6234 5651 7021 5475 5690 6277 8000 0 0 0 0 0 1023 0 0 0 0 0 s 20 20 30 20 20 30 30 30 20 20 25 25 100 0 0 0 0 0 0 0 0 0 0 0 a 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</Frame>
+      <Frame name="Neutra abierta" duration="500">7941 6121 5670 4731 6571 5572 6234 5651 7021 5475 5690 6277 8000 0 0 0 0 0 1023 0 0 0 0 0 s 20 20 30 20 20 30 30 30 20 20 25 25 100 0 0 0 0 0 0 0 0 0 0 0 a 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</Frame>
+    </Sequence>
+    <Sequence name="Felicidad" useSpeedAndAcceleration="false">
+      <Frame name="Neutra abierta" duration="500">7941 6121 5670 4731 6571 5572 6234 5651 7021 5475 5690 6277 8000 0 0 0 0 0 1023 0 0 0 0 0 s 20 20 30 20 20 30 30 30 20 20 25 25 100 0 0 0 0 0 0 0 0 0 0 0 a 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</Frame>
+      <Frame name="Neutra cerrada" duration="500">6727 7314 5670 5827 5298 5572 6234 5651 7021 5475 5690 6277 8000 0 0 0 0 0 1023 0 0 0 0 0 s 20 20 30 20 20 30 30 30 20 20 25 25 100 0 0 0 0 0 0 0 0 0 0 0 a 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</Frame>
+      <Frame name="Neutra abierta" duration="500">7941 6121 5670 4731 6571 5572 6234 5651 7021 5475 5690 6277 8000 0 0 0 0 0 1023 0 0 0 0 0 s 20 20 30 20 20 30 30 30 20 20 25 25 100 0 0 0 0 0 0 0 0 0 0 0 a 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</Frame>
+      <Frame name="Sonrisa" duration="1500">7119 5729 5670 5103 6825 5572 6234 5592 7725 4750 6943 4594 8000 0 0 0 0 0 1023 0 0 0 0 0 s 20 20 30 20 20 30 30 30 20 20 25 25 100 0 0 0 0 0 0 0 0 0 0 0 a 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</Frame>
+      <Frame name="Neutra abierta" duration="500">7941 6121 5670 4731 6571 5572 6234 5651 7021 5475 5690 6277 8000 0 0 0 0 0 1023 0 0 0 0 0 s 20 20 30 20 20 30 30 30 20 20 25 25 100 0 0 0 0 0 0 0 0 0 0 0 a 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</Frame>
+      <Frame name="Neutra cerrada" duration="500">6727 7314 5670 5827 5298 5572 6234 5651 7021 5475 5690 6277 8000 0 0 0 0 0 1023 0 0 0 0 0 s 20 20 30 20 20 30 30 30 20 20 25 25 100 0 0 0 0 0 0 0 0 0 0 0 a 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</Frame>
+    </Sequence>
+    <Sequence name="Movimiento boca" useSpeedAndAcceleration="false">
+      <Frame name="Neutra abierta" duration="500">7941 6121 5670 4731 6571 5572 6234 5651 7021 5475 5690 6277 8000 0 0 0 0 0 1023 0 0 0 0 0 s 20 20 30 20 20 30 30 30 50 50 25 25 100 0 0 0 0 0 0 0 0 0 0 0 a 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</Frame>
+      <Frame name="Neutra cerrada" duration="500">6727 7314 5670 5827 5298 5572 6234 5651 7021 5475 5690 6277 8000 0 0 0 0 0 1023 0 0 0 0 0 s 20 20 30 20 20 30 30 30 50 50 25 25 100 0 0 0 0 0 0 0 0 0 0 0 a 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</Frame>
+      <Frame name="Neutra abierta" duration="500">7941 6121 5670 4731 6571 5572 6234 5651 7021 5475 5690 6277 8000 0 0 0 0 0 1023 0 0 0 0 0 s 20 20 30 20 20 30 30 30 50 50 25 25 100 0 0 0 0 0 0 0 0 0 0 0 a 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</Frame>
+      <Frame name="Boca abierta 100" duration="500">7941 6121 5670 4731 6571 5572 6234 5651 7021 5475 5690 6277 4105 0 0 0 0 0 1023 0 0 0 0 0 s 20 20 30 20 20 30 30 30 50 50 25 25 100 0 0 0 0 0 0 0 0 0 0 0 a 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</Frame>
+      <Frame name="Boca abierta 50" duration="500">7941 6121 5670 4731 6571 5572 6234 5651 7021 5475 5690 6277 6101 0 0 0 0 0 1023 0 0 0 0 0 s 20 20 30 20 20 30 30 30 50 50 25 25 100 0 0 0 0 0 0 0 0 0 0 0 a 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</Frame>
+      <Frame name="Boca cerrada" duration="500">7941 6121 5670 4731 6571 5572 6234 5651 7021 5475 5690 6277 8000 0 0 0 0 0 1023 0 0 0 0 0 s 20 20 30 20 20 30 30 30 50 50 25 25 100 0 0 0 0 0 0 0 0 0 0 0 a 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</Frame>
+      <Frame name="Boca abierta 50" duration="500">7941 6121 5670 4731 6571 5572 6234 5651 7021 5475 5690 6277 6101 0 0 0 0 0 1023 0 0 0 0 0 s 20 20 30 20 20 30 30 30 50 50 25 25 100 0 0 0 0 0 0 0 0 0 0 0 a 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</Frame>
+      <Frame name="Boca abierta 100" duration="500">7941 6121 5670 4731 6571 5572 6234 5651 7021 5475 5690 6277 4105 0 0 0 0 0 1023 0 0 0 0 0 s 20 20 30 20 20 30 30 30 50 50 25 25 100 0 0 0 0 0 0 0 0 0 0 0 a 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</Frame>
+      <Frame name="Boca cerrada" duration="500">7941 6121 5670 4731 6571 5572 6234 5651 7021 5475 5690 6277 8000 0 0 0 0 0 1023 0 0 0 0 0 s 20 20 30 20 20 30 30 30 50 50 25 25 100 0 0 0 0 0 0 0 0 0 0 0 a 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</Frame>
+    </Sequence>
+    <Sequence name="Movimiento ojos" useSpeedAndAcceleration="false">
+      <Frame name="Neutra abierta" duration="500">7941 6121 5670 4731 6571 5572 6234 5651 7021 5475 5690 6277 8000 0 0 0 0 0 1023 0 0 0 0 0 s 20 20 30 20 20 30 30 30 20 20 25 25 100 0 0 0 0 0 0 0 0 0 0 0 a 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</Frame>
+      <Frame name="Neutra cerrada" duration="500">6727 7314 5670 5827 5298 5572 6234 5651 7021 5475 5690 6277 8000 0 0 0 0 0 1023 0 0 0 0 0 s 20 20 30 20 20 30 30 30 20 20 25 25 100 0 0 0 0 0 0 0 0 0 0 0 a 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</Frame>
+      <Frame name="Neutra abierta" duration="500">7941 6121 5670 4731 6571 5572 6234 5651 7021 5475 5690 6277 8000 0 0 0 0 0 1023 0 0 0 0 0 s 20 20 30 20 20 30 30 30 20 20 25 25 100 0 0 0 0 0 0 0 0 0 0 0 a 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</Frame>
+      <Frame name="Ojos abajo" duration="500">7941 6121 4418 4731 6571 5572 6234 5651 7021 5475 5690 6277 8000 0 0 0 0 0 1023 0 0 0 0 0 s 20 20 30 20 20 30 30 30 20 20 25 25 100 0 0 0 0 0 0 0 0 0 0 0 a 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</Frame>
+      <Frame name="Ojos abajo izquierda" duration="500">7941 6121 4418 4731 6571 4300 6234 5651 7021 5475 5690 6277 8000 0 0 0 0 0 1023 0 0 0 0 0 s 20 20 30 20 20 30 30 30 20 20 25 25 100 0 0 0 0 0 0 0 0 0 0 0 a 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</Frame>
+      <Frame name="Ojos abajo derecha" duration="500">7941 6121 4418 4731 6571 6688 6234 5651 7021 5475 5690 6277 8000 0 0 0 0 0 1023 0 0 0 0 0 s 20 20 30 20 20 30 30 30 20 20 25 25 100 0 0 0 0 0 0 0 0 0 0 0 a 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</Frame>
+      <Frame name="Ojos arriba derecha" duration="500">7941 6121 6845 4731 6571 6688 6234 5651 7021 5475 5690 6277 8000 0 0 0 0 0 1023 0 0 0 0 0 s 20 20 30 20 20 30 30 30 20 20 25 25 100 0 0 0 0 0 0 0 0 0 0 0 a 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</Frame>
+      <Frame name="Ojos arriba izquierda" duration="500">7941 6121 6845 4731 6571 4320 6234 5651 7021 5475 5690 6277 8000 0 0 0 0 0 1023 0 0 0 0 0 s 20 20 30 20 20 30 30 30 20 20 25 25 100 0 0 0 0 0 0 0 0 0 0 0 a 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</Frame>
+      <Frame name="Ojos izquierda" duration="500">7941 6121 5338 4731 6571 4320 6234 5651 7021 5475 5690 6277 8000 0 0 0 0 0 1023 0 0 0 0 0 s 20 20 30 20 20 30 30 30 20 20 25 25 100 0 0 0 0 0 0 0 0 0 0 0 a 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</Frame>
+      <Frame name="Ojos derecha" duration="500">7941 6121 5338 4731 6571 6786 6234 5651 7021 5475 5690 6277 8000 0 0 0 0 0 1023 0 0 0 0 0 s 20 20 30 20 20 30 30 30 20 20 25 25 100 0 0 0 0 0 0 0 0 0 0 0 a 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</Frame>
+    </Sequence>
+    <Sequence name="Sorpresa" useSpeedAndAcceleration="false">
+      <Frame name="Neutra abierta" duration="500">7941 6121 5670 4731 6571 5572 6234 5651 7021 5475 5690 6277 8000 0 0 0 0 0 1023 0 0 0 0 0 s 20 20 30 20 20 30 30 30 20 20 25 25 100 0 0 0 0 0 0 0 0 0 0 0 a 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</Frame>
+      <Frame name="Neutra cerrada" duration="500">6727 7314 5670 5827 5298 5572 6234 5651 7021 5475 5690 6277 8000 0 0 0 0 0 1023 0 0 0 0 0 s 20 20 30 20 20 30 30 30 20 20 25 25 100 0 0 0 0 0 0 0 0 0 0 0 a 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</Frame>
+      <Frame name="Neutra abierta" duration="500">7941 6121 5670 4731 6571 5572 6234 5651 7021 5475 5690 6277 8000 0 0 0 0 0 1023 0 0 0 0 0 s 20 20 30 20 20 30 30 30 20 20 25 25 100 0 0 0 0 0 0 0 0 0 0 0 a 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</Frame>
+      <Frame name="Sorpresa" duration="1500">7745 5318 6218 4535 7393 5572 5904 6140 7765 4496 4516 7334 4633 0 0 0 0 0 1023 0 0 0 0 0 s 20 20 30 20 20 30 30 30 20 20 25 25 100 0 0 0 0 0 0 0 0 0 0 0 a 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</Frame>
+      <Frame name="Neutra abierta" duration="500">7941 6121 5670 4731 6571 5572 6234 5651 7021 5475 5690 6277 8000 0 0 0 0 0 1023 0 0 0 0 0 s 20 20 30 20 20 30 30 30 20 20 25 25 100 0 0 0 0 0 0 0 0 0 0 0 a 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</Frame>
+      <Frame name="Neutra cerrada" duration="500">6727 7314 5670 5827 5298 5572 6234 5651 7021 5475 5690 6277 8000 0 0 0 0 0 1023 0 0 0 0 0 s 20 20 30 20 20 30 30 30 20 20 25 25 100 0 0 0 0 0 0 0 0 0 0 0 a 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</Frame>
+    </Sequence>
+    <Sequence name="Tristeza" useSpeedAndAcceleration="false">
+      <Frame name="Neutra abierta" duration="500">7941 6121 5670 4731 6571 5572 6234 5651 7021 5475 5690 6277 8000 0 0 0 0 0 1023 0 0 0 0 0 s 20 20 30 20 20 30 30 30 50 50 25 25 100 0 0 0 0 0 0 0 0 0 0 0 a 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</Frame>
+      <Frame name="Neutra cerrada" duration="500">6727 7314 5670 5827 5298 5572 6234 5651 7021 5475 5690 6277 8000 0 0 0 0 0 1023 0 0 0 0 0 s 20 20 30 20 20 30 30 30 50 50 25 25 100 0 0 0 0 0 0 0 0 0 0 0 a 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</Frame>
+      <Frame name="Neutra abierta" duration="500">7941 6121 5670 4731 6571 5572 6234 5651 7021 5475 5690 6277 8000 0 0 0 0 0 1023 0 0 0 0 0 s 20 20 30 20 20 30 30 30 50 50 25 25 100 0 0 0 0 0 0 0 0 0 0 0 a 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</Frame>
+      <Frame name="Tristeza" duration="1500">8000 6962 4476 4300 5670 5572 5738 6316 5670 6766 4653 7158 8000 0 0 0 0 0 1023 0 0 0 0 0 s 20 20 30 20 20 30 30 30 50 50 25 25 100 0 0 0 0 0 0 0 0 0 0 0 a 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</Frame>
+    </Sequence>
+  </Sequences>
+  <Script ScriptDone="true">
+### Sequence subroutines: ###
+
+# Enojo
+sub Enojo
+  500 7941 6121 5670 4731 6571 5572 
+  6234 5651 7021 5475 5690 6277 
+  8000 0 0 0 0 0 
+  0 0 0 0 0 frame_0..17_19..23 # Neutra abierta
+  500 6727 7314 5827 5298 frame_0_1_3_4 # Neutra cerrada
+  500 7941 6121 4731 6571 frame_0_1_3_4 # Neutra abierta
+  1500 7393 6669 5181 6023 7037 4985 
+  5416 7040 4985 7001 frame_0_1_3_4_6..11 # Enojo
+  500 7941 6121 4731 6571 6234 5651 
+  7021 5475 5690 6277 frame_0_1_3_4_6..11 # Neutra abierta
+  500 6727 7314 5827 5298 frame_0_1_3_4 # Neutra cerrada
+  500 7941 6121 4731 6571 frame_0_1_3_4 # Neutra abierta
+  return
+# Felicidad
+sub Felicidad
+  500 7941 6121 5670 4731 6571 5572 
+  6234 5651 7021 5475 5690 6277 
+  8000 0 0 0 0 0 
+  0 0 0 0 0 frame_0..17_19..23 # Neutra abierta
+  500 6727 7314 5827 5298 frame_0_1_3_4 # Neutra cerrada
+  500 7941 6121 4731 6571 frame_0_1_3_4 # Neutra abierta
+  1500 7119 5729 5103 6825 5592 7725 
+  4750 6943 4594 frame_0_1_3_4_7..11 # Sonrisa
+  500 7941 6121 4731 6571 5651 7021 
+  5475 5690 6277 frame_0_1_3_4_7..11 # Neutra abierta
+  500 6727 7314 5827 5298 frame_0_1_3_4 # Neutra cerrada
+  return
+# Movimiento boca
+sub Movimiento_boca
+  500 7941 6121 5670 4731 6571 5572 
+  6234 5651 7021 5475 5690 6277 
+  8000 0 0 0 0 0 
+  0 0 0 0 0 frame_0..17_19..23 # Neutra abierta
+  500 6727 7314 5827 5298 frame_0_1_3_4 # Neutra cerrada
+  500 7941 6121 4731 6571 frame_0_1_3_4 # Neutra abierta
+  500 4105 frame_12 # Boca abierta 100
+  500 6101 frame_12 # Boca abierta 50
+  500 8000 frame_12 # Boca cerrada
+  500 6101 frame_12 # Boca abierta 50
+  500 4105 frame_12 # Boca abierta 100
+  500 8000 frame_12 # Boca cerrada
+  return
+# Movimiento ojos
+sub Movimiento_ojos
+  500 7941 6121 5670 4731 6571 5572 
+  6234 5651 7021 5475 5690 6277 
+  8000 0 0 0 0 0 
+  0 0 0 0 0 frame_0..17_19..23 # Neutra abierta
+  500 6727 7314 5827 5298 frame_0_1_3_4 # Neutra cerrada
+  500 7941 6121 4731 6571 frame_0_1_3_4 # Neutra abierta
+  500 4418 frame_2 # Ojos abajo
+  500 4300 frame_5 # Ojos abajo izquierda
+  500 6688 frame_5 # Ojos abajo derecha
+  500 6845 frame_2 # Ojos arriba derecha
+  500 4320 frame_5 # Ojos arriba izquierda
+  500 5338 frame_2 # Ojos izquierda
+  500 6786 frame_5 # Ojos derecha
+  return
+# Sorpresa
+sub Sorpresa
+  500 7941 6121 5670 4731 6571 5572 
+  6234 5651 7021 5475 5690 6277 
+  8000 0 0 0 0 0 
+  0 0 0 0 0 frame_0..17_19..23 # Neutra abierta
+  500 6727 7314 5827 5298 frame_0_1_3_4 # Neutra cerrada
+  500 7941 6121 4731 6571 frame_0_1_3_4 # Neutra abierta
+  1500 7745 5318 6218 4535 7393 5904 
+  6140 7765 4496 4516 7334 4633 frame_0..4_6..12 # Sorpresa
+  500 7941 6121 5670 4731 6571 6234 
+  5651 7021 5475 5690 6277 8000 frame_0..4_6..12 # Neutra abierta
+  500 6727 7314 5827 5298 frame_0_1_3_4 # Neutra cerrada
+  return
+# Tristeza
+sub Tristeza
+  500 7941 6121 5670 4731 6571 5572 
+  6234 5651 7021 5475 5690 6277 
+  8000 0 0 0 0 0 
+  0 0 0 0 0 frame_0..17_19..23 # Neutra abierta
+  500 6727 7314 5827 5298 frame_0_1_3_4 # Neutra cerrada
+  500 7941 6121 4731 6571 frame_0_1_3_4 # Neutra abierta
+  1500 8000 6962 4476 4300 5670 5738 
+  6316 5670 6766 4653 7158 frame_0..4_6..11 # Tristeza
+  return
+
+sub frame_0..17_19..23
+  23 servo
+  22 servo
+  21 servo
+  20 servo
+  19 servo
+  17 servo
+  16 servo
+  15 servo
+  14 servo
+  13 servo
+  12 servo
+  11 servo
+  10 servo
+  9 servo
+  8 servo
+  7 servo
+  6 servo
+  5 servo
+  4 servo
+  3 servo
+  2 servo
+  1 servo
+  0 servo
+  delay
+  return
+
+sub frame_0_1_3_4
+  4 servo
+  3 servo
+  1 servo
+  0 servo
+  delay
+  return
+
+sub frame_0_1_3_4_6..11
+  11 servo
+  10 servo
+  9 servo
+  8 servo
+  7 servo
+  6 servo
+  4 servo
+  3 servo
+  1 servo
+  0 servo
+  delay
+  return
+
+sub frame_0_1_3_4_7..11
+  11 servo
+  10 servo
+  9 servo
+  8 servo
+  7 servo
+  4 servo
+  3 servo
+  1 servo
+  0 servo
+  delay
+  return
+
+sub frame_12
+  12 servo
+  delay
+  return
+
+sub frame_2
+  2 servo
+  delay
+  return
+
+sub frame_5
+  5 servo
+  delay
+  return
+
+sub frame_0..4_6..12
+  12 servo
+  11 servo
+  10 servo
+  9 servo
+  8 servo
+  7 servo
+  6 servo
+  4 servo
+  3 servo
+  2 servo
+  1 servo
+  0 servo
+  delay
+  return
+
+sub frame_0..4_6..11
+  11 servo
+  10 servo
+  9 servo
+  8 servo
+  7 servo
+  6 servo
+  4 servo
+  3 servo
+  2 servo
+  1 servo
+  0 servo
+  delay
+  return
+</Script>
+</UscSettings>
